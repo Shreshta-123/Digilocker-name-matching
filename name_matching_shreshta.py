@@ -15,7 +15,6 @@ from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from difflib import SequenceMatcher
 
-
 # Configure logging with log rotation
 handler = RotatingFileHandler('error.log', maxBytes=1024 * 1024 * 5, backupCount=3)  # 5MB per file, 3 backups
 handler.setLevel(logging.INFO)
